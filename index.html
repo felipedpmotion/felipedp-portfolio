@@ -1,0 +1,169 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Felipe • Direção de Arte</title>
+  <meta name="description" content="Portfólio conceitual de Direção de Arte. Menos ruído. Mais intenção.">
+
+  <!-- Font Awesome -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+>
+
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+
+<body>
+  <!-- Scroll progress -->
+  <div class="scroll-progress" aria-hidden="true">
+    <div class="scroll-progress__bar" id="progressBar"></div>
+  </div>
+
+  <!-- Grain overlay -->
+  <div class="grain" aria-hidden="true"></div>
+
+  <!-- Header minimal (sem logo e sem nome) -->
+  <header class="topbar">
+    <nav class="nav nav--solo" aria-label="Navegação principal">
+      <a href="#about">About me</a>
+      <a href="#projetos">Projects</a>
+      <a class="nav__cta" href="#contato">Contact</a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <!-- HERO (somente vídeo) -->
+    <section class="hero hero--clean" aria-label="Banner em vídeo">
+      <video
+        class="hero__video"
+        src="assets/video/banner.mp4"
+        autoplay
+        muted
+        loop
+        playsinline
+        preload="metadata"
+      ></video>
+      <div class="hero__veil hero__veil--soft" aria-hidden="true"></div>
+    </section>
+
+    <!-- ABOUT ME -->
+    <section id="about" class="about section">
+      <div class="container about__grid">
+        <div class="about__left">
+          <h2 class="section__title reveal">About me</h2>
+
+          <p class="about__text reveal" style="--d: 120ms;">
+            I’m Felipe, an Art Director focused on visual language, narrative, and experimentation.
+            I’m drawn to projects with strong concepts, carefully built tension, and an editorial finish.
+          </p>
+
+          <div class="about__chips reveal" style="--d: 220ms;">
+            <span class="chip">Brand Identity</span>
+            <span class="chip">Editorial Design</span>
+            <span class="chip">Campaigns</span>
+            <span class="chip">Brand Systems</span>
+          </div>
+        </div>
+
+        <!-- About right: sem card/vidro, só logo + ícones abaixo -->
+        <div class="about__right reveal" style="--d: 160ms;">
+          <div class="logo-plain">
+            <img src="assets/img/logo.png" alt="Logo Felipe"> <br>
+
+            <div class="contact__icons contact__icons--onabout" aria-label="Links de contato">
+              <a class="icon-btn" href="mailto:felipe@email.com" aria-label="Email" title="Email">
+                <i class="fa-solid fa-envelope"></i>
+              </a>
+
+              <a class="icon-btn" href="#" target="_blank" rel="noopener" aria-label="LinkedIn" title="LinkedIn">
+                <i class="fa-brands fa-linkedin-in"></i>
+              </a>
+
+              <a class="icon-btn" href="#" target="_blank" rel="noopener" aria-label="Vimeo" title="Vimeo">
+                <i class="fa-brands fa-vimeo-v"></i>
+              </a>
+
+              <a class="icon-btn" href="#" target="_blank" rel="noopener" aria-label="WhatsApp" title="WhatsApp">
+                <i class="fa-brands fa-whatsapp"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJETOS -->
+    <section id="projetos" class="projects section">
+      <div class="container">
+        <div class="projects__head">
+          <h2 class="section__title reveal">Projetos</h2>
+        </div>
+
+        <div class="projects__layout">
+          <aside class="preview reveal" style="--d: 160ms;" aria-hidden="true">
+            <div class="preview__media">
+              <img id="previewImg" alt="">
+            </div>
+            <div class="preview__meta">
+              <div class="preview__title" id="previewTitle"></div>
+              <div class="preview__tag" id="previewTag"></div>
+            </div>
+          </aside>
+
+          <ol class="project-list" id="projectList"></ol>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTATO (sem card, centralizado) -->
+    <section id="contato" class="contact">
+      <div class="container contact__inner reveal">
+        <h2 class="contact__title">Contact</h2>
+
+        <div class="contact__icons contact__icons--center" aria-label="Links de contato">
+          <a class="icon-btn icon-btn--dark" href="mailto:felipe@email.com" aria-label="Email" title="Email">
+            <i class="fa-solid fa-envelope"></i>
+          </a>
+
+          <a class="icon-btn icon-btn--dark" href="#" target="_blank" rel="noopener" aria-label="LinkedIn" title="LinkedIn">
+            <i class="fa-brands fa-linkedin-in"></i>
+          </a>
+
+          <a class="icon-btn icon-btn--dark" href="#" target="_blank" rel="noopener" aria-label="Vimeo" title="Vimeo">
+            <i class="fa-brands fa-vimeo-v"></i>
+          </a>
+
+          <a class="icon-btn icon-btn--dark" href="#" target="_blank" rel="noopener" aria-label="WhatsApp" title="WhatsApp">
+            <i class="fa-brands fa-whatsapp"></i>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container footer__inner">
+        <span class="muted">
+          © <span id="year"></span> Felipe Dias — All rights reserved.</span>
+
+        <span class="muted">
+          Developed by
+          <a
+            href="https://www.linkedin.com/in/rdleocadio/"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="LinkedIn de Rodrigo Leocádio"
+          >
+            Rodrigo Leocádio
+          </a>
+        </span>
+      </div>
+    </footer>
+  </main>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
