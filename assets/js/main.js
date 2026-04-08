@@ -91,15 +91,21 @@ if (heroVideo){
 
 // ===== Projects data (9 projetos)
 const projects = [
-  { n:"01", title:"Projeto Um", tag:"Identidade / Conceito", link:"#", img:"assets/img/p01.png" },
-  { n:"02", title:"Projeto Dois", tag:"Editorial / Grid", link:"#", img:"assets/img/p02.png" },
-  { n:"03", title:"Projeto Três", tag:"Campanha / Direção", link:"#", img:"assets/img/p03.png" },
-  { n:"04", title:"Projeto Quatro", tag:"Sistema Visual", link:"#", img:"assets/img/p04.png" },
-  { n:"05", title:"Projeto Cinco", tag:"Marca / Tom", link:"#", img:"assets/img/p05.png" },
-  { n:"06", title:"Projeto Seis", tag:"Experimental / Tipografia", link:"#", img:"assets/img/p06.png" },
-  { n:"07", title:"Projeto Sete", tag:"Capa / Layout", link:"#", img:"assets/img/p07.png" },
-  { n:"08", title:"Projeto Oito", tag:"Identidade / Editorial", link:"#", img:"assets/img/p08.jpg" },
-  { n:"09", title:"Projeto Nove", tag:"Conceito / Direção", link:"#", img:"assets/img/p09.jpg" },
+  { n:"01", title:"CLA Launch in Abu Dhabi • Mercedes-Benz", tag:"Art Direction • Campaign CLA Launch", link:"#", img:"assets/img/p01.png" },
+  { n:"02", title:"F1 GP Of Bahrain • Gulf Air", tag:"Art Direction • Motion", link:"#", img:"assets/img/p02.png" },
+  { n:"03", title:"Campaign Concept Pitch • Cupbop", tag:"Motion & Concept Pitch", link:"#", img:"assets/img/p03.png" },
+  { n:"04", title:"Delivery Session Campaign Pitch • Noon x Newcastle", tag:"Art Direction • Motion & Concept Pitch", link:"#", img:"assets/img/p04.png" },
+  { n:"05", title:"Championship Live Event • Al Wasl FC", tag:"Art Direction & Motion", link:"#", img:"assets/img/p05.png" },
+  { n:"06", title:"Explainer Video • PayBy", tag:"Motion • Explainer Video", link:"#", img:"assets/img/p06.png" },
+  { n:"07", title:"Xplained by SuperCar Blondie", tag:"Video Editor & Motion", link:"#", img:"assets/img/p07.png" },
+  { n:"08", title:"Motion Art Director • Alsayegh WorldWide", tag:"Motion Art Director in various projects", link:"#", img:"assets/img/p08.png" },
+  { n:"09", title:"Various Social & Digital Campaigns during ’25 • Terra", tag:"Art Director & Motion throughout Social & Digital Campaigns", link:"#", img:"assets/img/p09.png" },
+  { n:"10", title:"TV Sports & World Cup ’22 • Universo Online (UOL)", tag:"Art Director & Motion Designer", link:"#", img:"assets/img/p10.png" },
+  { n:"11", title:"Explainer Video & Art Direction • CESAR School", tag:"Art Direction • Motion • Explainer Video", link:"#", img:"assets/img/p11.png" },
+  { n:"12", title:"Explainer Video • SafeSend", tag:"Motion • Explainer Video", link:"#", img:"assets/img/p12.png" },
+  { n:"13", title:"Explainer Video • RockContent", tag:"Motion • Explainer Video", link:"#", img:"assets/img/p13.png" },
+  { n:"14", title:"Creative Director and Transmission Live Event • TT Coral", tag:"Creative Director & Motion", link:"#", img:"assets/img/p14.png" },
+  { n:"15", title:"Art Director & Motion Designer • RecBeat SP", tag:"Art Director • Motion Designer", link:"#", img:"assets/img/p15.png" },
 ];
 
 const list = qs("#projectList");
