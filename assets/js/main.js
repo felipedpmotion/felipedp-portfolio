@@ -97,7 +97,7 @@ const projects = [
   { n:"04", title:"Projeto Quatro", tag:"Sistema Visual", link:"#", img:"assets/img/p04.png" },
   { n:"05", title:"Projeto Cinco", tag:"Marca / Tom", link:"#", img:"assets/img/p05.png" },
   { n:"06", title:"Projeto Seis", tag:"Experimental / Tipografia", link:"#", img:"assets/img/p06.png" },
-  { n:"07", title:"Projeto Sete", tag:"Capa / Layout", link:"#", img:"assets/img/p07.jpg" },
+  { n:"07", title:"Projeto Sete", tag:"Capa / Layout", link:"#", img:"assets/img/p07.png" },
   { n:"08", title:"Projeto Oito", tag:"Identidade / Editorial", link:"#", img:"assets/img/p08.jpg" },
   { n:"09", title:"Projeto Nove", tag:"Conceito / Direção", link:"#", img:"assets/img/p09.jpg" },
 ];
