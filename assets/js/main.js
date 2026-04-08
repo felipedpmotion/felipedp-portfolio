@@ -91,12 +91,12 @@ if (heroVideo){
 
 // ===== Projects data (9 projetos)
 const projects = [
-  { n:"01", title:"Projeto Um", tag:"Identidade / Conceito", link:"#", img:"assets/img/p01.jpg" },
-  { n:"02", title:"Projeto Dois", tag:"Editorial / Grid", link:"#", img:"assets/img/p02.jpg" },
-  { n:"03", title:"Projeto Três", tag:"Campanha / Direção", link:"#", img:"assets/img/p03.jpg" },
-  { n:"04", title:"Projeto Quatro", tag:"Sistema Visual", link:"#", img:"assets/img/p04.jpg" },
-  { n:"05", title:"Projeto Cinco", tag:"Marca / Tom", link:"#", img:"assets/img/p05.jpg" },
-  { n:"06", title:"Projeto Seis", tag:"Experimental / Tipografia", link:"#", img:"assets/img/p06.jpg" },
+  { n:"01", title:"Projeto Um", tag:"Identidade / Conceito", link:"#", img:"assets/img/p01.png" },
+  { n:"02", title:"Projeto Dois", tag:"Editorial / Grid", link:"#", img:"assets/img/p02.png" },
+  { n:"03", title:"Projeto Três", tag:"Campanha / Direção", link:"#", img:"assets/img/p03.png" },
+  { n:"04", title:"Projeto Quatro", tag:"Sistema Visual", link:"#", img:"assets/img/p04.png" },
+  { n:"05", title:"Projeto Cinco", tag:"Marca / Tom", link:"#", img:"assets/img/p05.png" },
+  { n:"06", title:"Projeto Seis", tag:"Experimental / Tipografia", link:"#", img:"assets/img/p06.png" },
   { n:"07", title:"Projeto Sete", tag:"Capa / Layout", link:"#", img:"assets/img/p07.jpg" },
   { n:"08", title:"Projeto Oito", tag:"Identidade / Editorial", link:"#", img:"assets/img/p08.jpg" },
   { n:"09", title:"Projeto Nove", tag:"Conceito / Direção", link:"#", img:"assets/img/p09.jpg" },
