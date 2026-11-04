@@ -28,6 +28,7 @@ Raw material lives outside the repo, one folder per project:
 pNN/
   info.md      title, client, year, role, tags, tools, vimeo, status + Summary/Challenge/Approach/Result/Credits
   cover.jpg    cover (also the home preview)
+  logo.svg     client logo (or logo.png, transparent) — shown white at 40% behind the heading; `logo_color: original` keeps its colours
   frames/      01.jpg, 02.jpg… in display order
   vertical/    9:16 pieces (images or mp4)
   video/       main video (mp4) + poster.jpg — skipped when `vimeo` is set

@@ -50,6 +50,22 @@
 .btn--orange:hover{ box-shadow: 0 12px 32px rgba(241,90,36,.3); }
 .btn--ghost{ border:1px solid rgba(255,255,255,.14); background: rgba(255,255,255,.03); }
 
+/* client logo behind the heading */
+.case-b__info, .case-c__head{ position: relative; isolation: isolate; }
+.case-b__info{ position: sticky; }
+.case__logo{
+  position:absolute; z-index:-1; pointer-events:none;
+  top: 0; left: 0; right: 0; height: 380px;
+  display:flex; align-items:center; justify-content:center;
+  opacity: var(--logo-opacity, .4);
+}
+.case-c__head .case__logo{ top: 24px; bottom: 56px; height:auto; }
+.case__logo img{
+  max-width: 100%; max-height: 100%; width: auto; height: auto; object-fit: contain;
+  filter: brightness(0) invert(1);
+}
+.case__logo--original img{ filter:none; }
+
 /* player */
 .case-player{
   aspect-ratio: 16/9; border-radius: var(--radius); overflow:hidden; background:#111;
@@ -157,6 +173,7 @@
 @media (max-width: 980px){
   .nav--case{ display:flex; }
   .case-b__info{ position: relative; top:auto; }
+  .case__logo{ height: 300px; }
   .case-card{ padding: 22px; }
 }
 @media (max-width: 640px){

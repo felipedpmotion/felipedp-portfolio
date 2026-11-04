@@ -65,6 +65,15 @@ def media(src_dir: str, n: str) -> None:
                 shutil.copy2(f, out / "video" / f.name)
             elif f.suffix.lower() in IMG_EXT and f.stem == "poster":
                 _save_webp(f, out / "video" / "poster.webp", 1600)
+    for ext in (".svg", ".png", ".webp"):
+        logo = src / f"logo{ext}"
+        if logo.exists():
+            out.mkdir(parents=True, exist_ok=True)
+            if ext == ".png":
+                Image.open(logo).save(out / "logo.webp", "WEBP", quality=90, method=6)
+            else:
+                shutil.copy2(logo, out / f"logo{ext}")
+            break
     if (src / "info.md").exists():
         (CONTENT / f"p{n}").mkdir(parents=True, exist_ok=True)
         shutil.copy2(src / "info.md", CONTENT / f"p{n}" / "info.md")
@@ -138,6 +147,7 @@ def project_media(n: str) -> dict:
         "vertical_videos": vids("vertical"),
         "videos": vids("video"),
         "poster": "video/poster.webp" if (d / "video" / "poster.webp").exists() else "",
+        "logo": next((f"logo{e}" for e in (".svg", ".webp") if (d / f"logo{e}").exists()), ""),
     }
 
 
@@ -217,6 +227,14 @@ def player(meta: dict, media: dict, base: str, title: str) -> str:
     if media["cover"]:
         return f'<div class="case-player case-player--still"><img src="{base}{media["cover"]}" alt="{esc(title)}"></div>'
     return ""
+
+
+def logo_bg(meta: dict, media: dict, base: str) -> str:
+    """Client logo behind the heading text — 40% opacity, white by default (logo_color: original keeps its colours)."""
+    if not media.get("logo"):
+        return ""
+    cls = "case__logo" + (" case__logo--original" if meta.get("logo_color") == "original" else "")
+    return f'<div class="{cls}" aria-hidden="true"><img src="{base}{media["logo"]}" alt=""></div>'
 
 
 def frame_img(f: dict, base: str, alt: str, cls: str = "") -> str:
@@ -301,6 +319,7 @@ def render_b(n, meta, sec, media, catalog) -> str:
   <main id="top" class="case case--b">
     <div class="container case-b">
       <aside class="case-b__info">
+        {logo_bg(meta, media, base)}
         <div class="case__num">{esc(n)}</div>
         <div class="case__heading">
           <h1 class="case__title">{esc(title)}</h1>
@@ -366,6 +385,7 @@ def render_c(n, meta, sec, media, catalog) -> str:
     out += f"""
   <main id="top" class="case case--c">
     <section class="container case-c__head">
+      {logo_bg(meta, media, base)}
       <div class="case__num case__num--xl">{esc(n)}</div>
       <div class="case-c__title">
         <div class="case__kicker">{esc(client)}{(" • " + esc(meta["year"])) if meta.get("year") else ""}{(" • " + esc(meta["status"])) if meta.get("status") else ""}</div>
