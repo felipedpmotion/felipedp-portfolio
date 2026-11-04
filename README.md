@@ -1,4 +1,4 @@
-# Felipe DP Motion — Portfolio
+# Felipe Dias Pereira — Portfolio
 
 Static site (HTML/CSS/JS, no framework), published with GitHub Pages.
 

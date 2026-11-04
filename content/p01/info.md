@@ -28,7 +28,7 @@ I wrote the detailed show script and storyboard, then generated every scene with
 The show ran live at the regional launch on 29 Oct 2026, in front of the parade of classic S-Class generations.
 
 ## Credits
-- Show Script, Art Direction & AI Visuals: Felipe Dias
+- Show Script, Art Direction & AI Visuals: Felipe Dias Pereira
 - Creative Director: Daniel Vsykóc
 - Agency: OiAi / Fugu Chefs
 - Production: [PREENCHER]

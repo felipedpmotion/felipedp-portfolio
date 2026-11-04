@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Portfolio build — Felipe DP Motion.
+"""Portfolio build — Felipe Dias Pereira.
 
 Two commands, no framework:
 
@@ -161,9 +161,9 @@ def head(title: str, desc: str, image: str) -> str:
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>{esc(title)} • Felipe DP Motion</title>
+  <title>{esc(title)} • Felipe Dias Pereira</title>
   <meta name="description" content="{esc(desc)}">
-  <meta property="og:title" content="{esc(title)} • Felipe DP Motion">
+  <meta property="og:title" content="{esc(title)} • Felipe Dias Pereira">
   <meta property="og:description" content="{esc(desc)}">
   <meta property="og:image" content="{esc(image)}">
   <meta property="og:type" content="article">
@@ -198,7 +198,7 @@ CONTACT = """
   </section>
   <footer class="footer">
     <div class="container footer__inner">
-      <span class="muted">© <span id="year"></span> Felipe DP Motion — All rights reserved.</span>
+      <span class="muted">© <span id="year"></span> Felipe Dias Pereira — All rights reserved.</span>
       <span class="muted">Developed by <a href="https://www.linkedin.com/in/rdleocadio/" target="_blank" rel="noopener noreferrer">Rodrigo Leocádio</a></span>
     </div>
   </footer>
