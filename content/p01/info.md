@@ -10,7 +10,7 @@ tools: "Nano Banana 2, MiniMax, After Effects"
 vimeo: ""             # quando subir no Vimeo, cole o link; até lá usa video/highlights.mp4
 status: ""
 venue: "Emirates Palace, Abu Dhabi"
-agency: "Al Sayegh"
+agency: "OiAi / Fugu Chefs"
 ---
 
 <!-- RASCUNHO escrito pelo Claude a partir dos arquivos do projeto — revise e corrija. -->
@@ -29,7 +29,7 @@ The show ran live at the regional launch on 29 Oct 2026, in front of the parade 
 
 ## Credits
 - Show Script, Art Direction & AI Visuals: Felipe Dias
-- Creative Director: Daniel Al Sayegh
-- Agency: Al Sayegh
+- Creative Director: Daniel Vsykóc
+- Agency: OiAi / Fugu Chefs
 - Production: [PREENCHER]
 - Event photography: [PREENCHER — crédito do fotógrafo]
