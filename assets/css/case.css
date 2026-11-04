@@ -57,7 +57,7 @@
   position:absolute; z-index:-1; pointer-events:none;
   top: 0; left: 0; right: 0; height: 380px;
   display:flex; align-items:center; justify-content:center;
-  opacity: var(--logo-opacity, .4);
+  opacity: var(--logo-opacity, .2);
 }
 .case-c__head .case__logo{ top: 24px; bottom: 56px; height:auto; }
 .case__logo img{

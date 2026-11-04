@@ -230,7 +230,7 @@ def player(meta: dict, media: dict, base: str, title: str) -> str:
 
 
 def logo_bg(meta: dict, media: dict, base: str) -> str:
-    """Client logo behind the heading text — 40% opacity, white by default (logo_color: original keeps its colours)."""
+    """Client logo behind the heading text — 20% opacity, white by default (logo_color: original keeps its colours)."""
     if not media.get("logo"):
         return ""
     cls = "case__logo" + (" case__logo--original" if meta.get("logo_color") == "original" else "")
