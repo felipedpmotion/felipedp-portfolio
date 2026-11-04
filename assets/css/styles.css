@@ -304,8 +304,10 @@ a{ color:inherit; text-decoration:none; }
   border-top: 1px solid rgba(255,255,255,.12);
 }
 .project{
-  padding: 18px 6px;
   border-bottom: 1px solid rgba(255,255,255,.12);
+}
+.project__link{
+  padding: 18px 6px;
   display:grid;
   grid-template-columns: 56px 1fr auto;
   gap: 14px;
@@ -313,21 +315,27 @@ a{ color:inherit; text-decoration:none; }
   cursor:pointer;
   transition: background .18s ease, transform .18s ease;
 }
-.project:hover{
+.project__link:hover, .project__link:focus-visible{
   background: rgba(255,255,255,.035);
   transform: translateY(-1px);
 }
+.project__body{ display:flex; flex-direction:column; }
+.project--soon .project__link{ cursor:default; }
+.project--soon .project__cta{ color: rgba(255,255,255,.45); }
+.project--soon .project__cta::after{ content:""; margin:0; }
 .project__n{
   color: rgba(255,255,255,.55);
   font-size: 12px;
   letter-spacing:.14em;
 }
 .project__title{
+  display:block;
   font-size: 18px;
   letter-spacing: -0.01em;
   margin:0;
 }
 .project__meta{
+  display:block;
   color: rgba(255,255,255,.62);
   font-size: 13px;
   margin-top: 4px;
@@ -437,7 +445,7 @@ a{ color:inherit; text-decoration:none; }
 }
 
 @media (max-width: 520px){
-  .project{ grid-template-columns: 44px 1fr; }
+  .project__link{ grid-template-columns: 44px 1fr; }
   .project__cta{ display:none; }
   .logo-plain .contact__icons::before{
     width: min(240px, 78%);
