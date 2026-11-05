@@ -216,9 +216,12 @@ CONTACT = """
 
 def player(meta: dict, media: dict, base: str, title: str) -> str:
     vimeo = meta.get("vimeo", "")
-    vm = re.search(r"vimeo\.com/(?:video/)?(\d+)", vimeo or "")
+    # accepts vimeo.com/ID, vimeo.com/ID/HASH (unlisted), player.vimeo.com/video/ID?h=HASH or a full <iframe> embed code
+    vm = re.search(r"vimeo\.com/(?:video/)?(\d+)(?:/([0-9a-f]{6,}))?(?:[^\"']*?[?&]h=([0-9a-f]+))?", vimeo or "")
     if vm:
-        return (f'<div class="case-player"><iframe src="https://player.vimeo.com/video/{vm.group(1)}?dnt=1&amp;title=0&amp;byline=0&amp;portrait=0" '
+        h = vm.group(2) or vm.group(3)
+        hash_q = f"h={h}&amp;" if h else ""
+        return (f'<div class="case-player"><iframe src="https://player.vimeo.com/video/{vm.group(1)}?{hash_q}dnt=1&amp;title=0&amp;byline=0&amp;portrait=0" '
                 f'title="{esc(title)}" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen loading="lazy"></iframe></div>')
     if media["videos"]:
         poster = f' poster="{base}{media["poster"] or media["cover"]}"' if (media["poster"] or media["cover"]) else ""
