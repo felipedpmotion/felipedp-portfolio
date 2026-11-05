@@ -9,10 +9,10 @@ window.PROJECTS = [
   },
   {
     "n": "02",
-    "title": "F1 GP Of Bahrain • Gulf Air",
-    "tag": "Art Direction • Motion",
-    "img": "assets/img/p02.png",
-    "link": ""
+    "title": "F1 GP of Bahrain • Gulf Air",
+    "tag": "Art Direction • Motion • Generative AI",
+    "img": "assets/projects/p02/cover.webp",
+    "link": "projects/p02/"
   },
   {
     "n": "03",

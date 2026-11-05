@@ -274,6 +274,8 @@ def neighbours(n: str, catalog: list) -> tuple:
     idx = next((i for i, p in enumerate(built) if p["n"] == n), 0)
     prev_p = built[idx - 1] if len(built) > 1 else None
     next_p = built[(idx + 1) % len(built)] if len(built) > 1 else None
+    if prev_p is not None and prev_p is next_p:  # only two cases: show just "Next"
+        prev_p = None
     return prev_p, next_p
 
 
@@ -315,7 +317,7 @@ def render_b(n, meta, sec, media, catalog) -> str:
         return (f'<li><a class="project-link" href="{REL}projects/p{p["n"]}/"><span class="project__n">{p["n"]}</span>'
                 f'<span class="project__body"><span class="project__kicker">{label}</span><span class="project__title">{esc(p["title"])}</span></span>'
                 f'<span class="project__cta">{arrow}</span></a></li>')
-    nav = f'<ol class="case-nav">{row(prev_p, "Previous", "← Open")}{row(next_p, "Next", "Open ↗")}</ol>' if prev_p else ""
+    nav = f'<ol class="case-nav">{row(prev_p, "Previous", "← Open")}{row(next_p, "Next", "Open ↗")}</ol>' if (prev_p or next_p) else ""
     desc = " ".join((sec.get("summary") or "").split())
     out = head(f"{title} • {client}", desc, f"{base}{media['cover']}")
     out += f"""

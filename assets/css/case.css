@@ -55,7 +55,7 @@
 .case-b__info{ position: sticky; }
 .case__logo{
   position:absolute; z-index:-1; pointer-events:none;
-  top: 0; left: 0; right: 0; height: 380px;
+  top: 0; left: 0; right: 0; height: 270px;
   display:flex; align-items:center; justify-content:center;
   opacity: var(--logo-opacity, .2);
 }
@@ -173,7 +173,7 @@
 @media (max-width: 980px){
   .nav--case{ display:flex; }
   .case-b__info{ position: relative; top:auto; }
-  .case__logo{ height: 300px; }
+  .case__logo{ height: 240px; }
   .case-card{ padding: 22px; }
 }
 @media (max-width: 640px){
